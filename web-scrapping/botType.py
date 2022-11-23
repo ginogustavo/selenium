@@ -17,6 +17,7 @@ driver.get("https://www.seleniumeasy.com/")
 driver.implicitly_wait(3)  # time.sleep(30) is inefficient, bc not always we want to wail 30 secs.
 
 my_element = driver.find_element(By.ID,"edit-search-block-form--2")
+my_element.clear()
 my_element.send_keys("Selenium")
 my_element.send_keys(Keys.RETURN)
 
